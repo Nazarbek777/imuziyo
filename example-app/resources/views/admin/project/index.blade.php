@@ -39,7 +39,7 @@
                           @method('DELETE')
                           <button class="btn-del" type="submit"><img width="20px"   src="{{asset('images/delete.png')}}" alt=""></button>
                       </form>
-                      <a href="{{route('our-tame.edit',$item->id)}}"> <img width="20px" class="mx-2" src="{{asset('images/edit.png')}}" alt=""></a>
+                      <a href="{{route('project.edit',$item->id)}}"> <img width="20px" class="mx-2" src="{{asset('images/edit.png')}}" alt=""></a>
                       <a href="{{route('project.show', $item->id)}}"><img width="20px" src="{{asset('images/eye.png')}}" alt=""></a>
                   </td>
               </tr>

@@ -2,19 +2,38 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Connection;
+use App\Models\Home;
 use App\Models\Main;
+use App\Models\Network;
+use App\Models\Project;
+use App\Models\Show;
+use App\Models\Tame;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Storage;
 
 class MainController extends Controller
 {
 
-    public function page()
-    {
-        $main = Main::all();
 
-        return view('index',compact('main'));
+
+    public function page(Request $request)
+    {
+
+
+        $main = Main::all();
+        $tame = Tame::all();
+        $connection = Connection::all();
+        $project = Project::all();
+        $network = Network::all();
+        $show = Show::all();
+        $home = Home::all();
+
+
+        return view('index',compact('main','tame','project','connection','network','show','home'));
     }
+
     public function index()
     {
         $main = Main::all();

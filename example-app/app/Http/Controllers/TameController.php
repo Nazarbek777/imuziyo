@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 
 class TameController extends Controller
 {
+    public function pageTame()
+    {
+        $pageTame= Tame::all();
+        return view('index',compact('pageTame'));
+    }
+
     public function index()
     {
         $team= Tame::all();

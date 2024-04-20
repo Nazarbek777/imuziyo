@@ -1,123 +1,495 @@
+
 @extends('layouts.app')
 
 @section('title', 'Home Page')
 
 @section('content')
-    <!-- ======= Header ======= -->
-    <header id="header" class="header fixed-top">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo d-flex align-items-center">
-                <img src="assets/img/logo.png" alt="">
+    <body>
 
-            </a>
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Bosh sahifa</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Tashkilotlarimiz</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Bizning jamoa</a></li>
-                    <li><a class="nav-link scrollto" href="#projects">Loyihalarimiz</a></li>
-                    <li><a class="getstarted scrollto" href="#contact">Bog'lanish</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-
-        </div>
-    </header><!-- End Header -->
 
     <main id="main">
-
-        <!-- ======= Breadcrumbs ======= -->
-        <section class="breadcrumbs">
+        <!-- ======= Team Section ======= -->
+        <section class="team">
             <div class="container">
-
-                <ol>
-                    <li><a href="index.html">Bosh sahifa</a></li>
-                    <li>Qarshi Xalqaro Universiteti</li>
-                </ol>
-                <h2>Qarshi Xalqaro Universiteti</h2>
-
-            </div>
-        </section><!-- End Breadcrumbs -->
-
-        <!-- ======= Portfolio Details Section ======= -->
-        <section id="portfolio-details" class="portfolio-details">
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-lg-8">
-                        <div class="portfolio-details-slider swiper">
-                            <div class="swiper-wrapper align-items-center">
-
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/kiu.jpg" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/kiu.jpg" alt="">
-                                </div>
-
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/kiu.jpg" alt="">
+                <header class="section-header">
+                    <p>Ilm-u ziyo jamoasi</p>
+                </header>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class=" slide-track">
+                                <div class="member ">
+                                    <div class="member-img">
+                                        <img src="{{asset('img/team/ur.png')}}" class="img-fluid" alt=""
+                                             style="height: 100%;">
+                                        <div class="social">
+                                            <a href=""><i class="bi bi-telegram"></i></a>
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                            <a href=""><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <a href="#"><h4>Uchqun Raxmanov</h4></a>
+                                        <span>Ilm-u ziyo akademiyasi asoschisi</span>
+                                        <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
+                                    </div>
                                 </div>
 
                             </div>
-                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" slide-track">
+                                <div class="member ">
+                                    <div class="member-img">
+                                        <img src="{{asset('img/team/ur.png')}}" class="img-fluid" alt=""
+                                             style="height: 100%;">
+                                        <div class="social">
+                                            <a href=""><i class="bi bi-telegram"></i></a>
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                            <a href=""><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <a href="#"><h4>Uchqun Raxmanov</h4></a>
+                                        <span>Ilm-u ziyo akademiyasi asoschisi</span>
+                                        <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" slide-track">
+                                <div class="member ">
+                                    <div class="member-img">
+                                        <img src="{{asset('img/team/ur.png')}}" class="img-fluid" alt=""
+                                             style="height: 100%;">
+                                        <div class="social">
+                                            <a href=""><i class="bi bi-telegram"></i></a>
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                            <a href=""><i class="bi bi-facebook"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <a href="#"><h4>Uchqun Raxmanov</h4></a>
+                                        <span>Ilm-u ziyo akademiyasi asoschisi</span>
+                                        <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" slide-track">
+                                <div class="member ">
+                                    <div class="member-img">
+                                        <img src="{{asset('img/team/ur.png')}}" class="img-fluid" alt=""
+                                             style="height: 100%;">
+                                        <div class="social">
+                                            <a href=""><i class="bi bi-telegram"></i></a>
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                            <a href=""><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <a href="#"><h4>Uchqun Raxmanov</h4></a>
+                                        <span>Ilm-u ziyo akademiyasi asoschisi</span>
+                                        <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" slide-track">
+                                <div class="member ">
+                                    <div class="member-img">
+                                        <img src="{{asset('img/team/ur.png')}}" class="img-fluid" alt=""
+                                             style="height: 100%;">
+                                        <div class="social">
+                                            <a href=""><i class="bi bi-telegram"></i></a>
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                            <a href=""><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <a href="#"><h4>Uchqun Raxmanov</h4></a>
+                                        <span>Ilm-u ziyo akademiyasi asoschisi</span>
+                                        <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" slide-track">
+                                <div class="member ">
+                                    <div class="member-img">
+                                        <img src="{{asset('img/team/ur.png')}}" class="img-fluid" alt=""
+                                             style="height: 100%;">
+                                        <div class="social">
+                                            <a href=""><i class="bi bi-telegram"></i></a>
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                            <a href=""><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <a href="#"><h4>Uchqun Raxmanov</h4></a>
+                                        <span>Ilm-u ziyo akademiyasi asoschisi</span>
+                                        <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" slide-track">
+                                <div class="member ">
+                                    <div class="member-img">
+                                        <img src="{{asset('img/team/ur.png')}}" class="img-fluid" alt=""
+                                             style="height: 100%;">
+                                        <div class="social">
+                                            <a href=""><i class="bi bi-telegram"></i></a>
+                                            <a href=""><i class="bi bi-instagram"></i></a>
+                                            <a href=""><i class="bi bi-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="member-info">
+                                        <a href="#"><h4>Uchqun Raxmanov</h4></a>
+                                        <span>Ilm-u ziyo akademiyasi asoschisi</span>
+                                        <!-- <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p> -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="portfolio">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <p>Bizning loyihalarimiz</p>
+                </header>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active" ><a href="{{route('page')}}#team">Barchasi</a></li>
+                            <li data-filter=".filter-app">Tibbiyot texnikumlari</li>
+                            <li data-filter=".filter-web">Xususiy maktablar</li>
+                            <li data-filter=".filter-app">Universitetlar</li>
+                            <li data-filter=".filter-web">O'quv markazlari</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
-                        <div class="portfolio-info">
-                            <h3>Project information</h3>
-                            <ul>
-                                <li><strong>Category</strong>: Web design</li>
-                                <li><strong>Client</strong>: ASU Company</li>
-                                <li><strong>Project date</strong>: 01 March, 2020</li>
-                                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-                            </ul>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/kiu.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="portfolio-description">
-                            <h2>This is an example of portfolio detail</h2>
-                            <p>
-                                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-                            </p>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="assets/img/portfolio/kiu.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="{{asset('img/portfolio/kiu.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="{{asset('img/portfolio/kiu.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="{{asset('img/portfolio/kiu.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="{{asset('img/portfolio/kiu.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="{{asset('img/portfolio/kiu.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <div class="portfolio-wrap">
+                            <img src="{{asset('img/portfolio/kiu.jpg')}}" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>Qarshi Xalqaro Universiteti</h4>
+                                <div class="portfolio-links">
+                                    <a href="{{asset('img/portfolio/kiu.jpg')}}" data-gallery="portfolioGallery" class="portfokio-lightbox" title="App 1"><i class="bi bi-plus"></i></a>
+                                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
 
             </div>
-        </section><!-- End Portfolio Details Section -->
 
-    </main><!-- End #main -->
+        </section>
+
+
+        <!-- End Portfolio Section -->
+
+        <!-- ======= Recent Blog Posts Section ======= -->
+        <!-- <section id="recent-blog-posts" class="recent-blog-posts">
+
+          <div class="container" data-aos="fade-up">
+
+            <header class="section-header">
+              <p>Eng oxirgi yangiliklari</p>
+            </header>
+
+            <div class="row">
+
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="post-img"><img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt=""></div>
+                  <span class="post-date">Tue, September 15</span>
+                  <h3 class="post-title">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h3>
+                  <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="post-img"><img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt=""></div>
+                  <span class="post-date">Fri, August 28</span>
+                  <h3 class="post-title">Et repellendus molestiae qui est sed omnis voluptates magnam</h3>
+                  <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="post-box">
+                  <div class="post-img"><img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt=""></div>
+                  <span class="post-date">Mon, July 11</span>
+                  <h3 class="post-title">Quia assumenda est et veritatis aut quae</h3>
+                  <a href="blog-single.html" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </section> -->
+        <!-- End Recent Blog Posts Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <p>Biz bilan bog'lanish</p>
+                </header>
+
+                <div class="row gy-1">
+                    <div class="col-lg-12">
+                        <div class="row gy-4">
+                            <div class="col-md-4">
+                                <div class="info-box">
+                                    <!-- <i class="bi bi-building"></i> -->
+                                    <h3>Ilm-u ziyo tibbiyot kolleji</h3>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-telephone fs-5">
+                                            </i>
+                                        </div>
+                                        <div class="col-10  ">
+                                            <p>+998 78 113 26 64</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-geo fs-5">
+                                            </i>
+                                        </div>
+                                        <div class="col-10  ">
+                                            <p>Qashqadaryo viloyati, Qarshi sh. Maxallot mahallasi, Olimlar ko'chasi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-box">
+                                    <!-- <i class="bi bi-building"></i> -->
+                                    <h3>Ilm-u ziyo school</h3>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-telephone fs-5">
+                                            </i>
+                                        </div>
+                                        <div class="col-10  ">
+                                            <p>+998 78 113 71 01</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-geo fs-5">
+                                            </i>
+                                        </div>
+                                        <div class="col-10  ">
+                                            <p>Qashqadaryo viloyati, Qarshi sh. A.Navoiy mahallasi, Olimlar ko'chasi,
+                                                1a-uy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-box">
+                                    <!-- <i class="bi bi-building"></i> -->
+                                    <h3>Ilm-u ziyo o'quv markazi</h3>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-telephone fs-5">
+                                            </i>
+                                        </div>
+                                        <div class="col-10  ">
+                                            <p>+998 91 450 96 16</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <i class="bi bi-geo fs-5">
+                                            </i>
+                                        </div>
+                                        <div class="col-10  ">
+                                            <p>Qashqadaryo viloyati, Qarshi sh. Olimlar ko'chasi, 1-uy</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- End Contact Section -->
+
+    </main>
+    <!-- End #main -->
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
 
         <div class="footer-top">
             <div class="container">
-                <div class="row gy-2">
-                    <div class="col-lg-6 col-md-12 footer-info">
-                        <a href="index.html" class="logo d-flex align-items-center">
-                            <img src="assets/img/logo.png" alt="">
-                        </a>
-                        <p>Ta'lim sifatini yaxshilagan holda xalqimizning <br>yashash sharoitini yaxshilash yo'lida birgamiz</p>
-                    </div>
-
-                    <div class="col-lg-6 col-6 footer-links">
-
-                        <div class="social-links mt-3 ">
-                            <h4>Ijtimoiy tarmoqlar:</h4>
-                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                @foreach($network as $net)
+                    <div class="row gy-2">
+                        <div class="col-lg-6 col-md-12 footer-info">
+                            <a href="index.html" class="logo d-flex align-items-center">
+                                <img src="assets/img/logo.png" alt="">
+                            </a>
+                            <p class="w-50">
+                                {{$net->name}}
+                            </p>
                         </div>
-                    </div>
 
-                </div>
+                        <div class="col-lg-6 col-6 footer-links">
+
+                            <div class="social-links mt-3 ">
+                                <h4>Ijtimoiy tarmoqlar:</h4>
+                                <div class="mx-5">
+                                    <a href="{{$net->telegram}}" class="linkedin"><i class="bi bi-telegram"></i></a>
+                                    <a href="{{$net->facebook}}" class="facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="{{$net->instagram}}" class="instagram"><i class="bi bi-instagram"></i></a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                @endforeach
             </div>
         </div>
 
@@ -128,7 +500,7 @@
             <div class="credits">
             </div>
         </div>
-    </footer><!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 @endsection

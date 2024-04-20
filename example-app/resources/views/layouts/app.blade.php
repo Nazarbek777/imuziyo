@@ -8,11 +8,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"
     />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <title>Document</title>
 </head>
 <style>
+
+
+
+    .swiper {
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
     /**
 * Template Name: FlexStart
 * Updated: Jan 29 2024 with Bootstrap v5.3.2
@@ -33,6 +62,123 @@
         color: #444444;
     }
 
+
+
+    .member {
+        flex: 0 0 auto;
+        width: 300px; /* Slider elementlari o'lchami */
+    }
+
+
+    .slide-content-x{
+        margin: 0 40px;
+    }
+
+    .card-x{
+        width:320px;
+        border-radius:25px;
+        background-color: #f5f3f3;
+    }
+    .image-content-x, .card-content-x{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        padding:10px 14px;
+    }
+    .image-content-x{
+        row-gap:5px;
+        position:relative;
+    }
+    .overlay-x{
+        position:absolute;
+        height:50%;
+        width:100%;
+        background-color:#4070F4;
+        left:0;
+        top:0;
+        border-radius:25px 25px 0 25px;
+    }
+
+    .overlay-x::before,
+    .overlay-x::after{
+        content:'';
+        position:absolute;
+        right:0;
+        bottom:-40px;
+        height:40px;
+        width:40px;
+        background-color:#4070F4;;
+    }
+    .overlay-x::after{
+        border-radius:  0 25px 0 0 ;
+        background-color:#FFF;
+    }
+    .card-image-x{
+        position:relative;
+        height:150px;
+        width:150px;
+        border-radius:50%;
+    }
+
+    .card-image-x .card-img-x{
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        border:4px solid #4070F4;
+        border-radius:50%;
+
+    }
+    .name-x{
+        font-size:18px;
+        font-weight:500;
+        color:#333;
+    }
+    .description-x{
+        font-size:14px;
+        color:#707070;
+        text-align:center;
+    }
+    .button-x{
+        border:none;
+        font-size:16px;
+        color:#FFF;
+        padding:8px 16px;
+        background-color:#4070F4;
+        border-radius:6px;
+        margin:14px;
+        cursor:pointer;
+        transition:all 0.3s ease;
+    }
+    .button:hover{
+        background:#265DF2;
+    }
+
+
+
+
+
+
+
+    @media (max-width: 767px) {
+        .testimonials .testimonial-wrap {
+            padding-left: 0;
+        }
+
+        .testimonials .testimonials-carousel,
+        .testimonials .testimonials-slider {
+            overflow: hidden;
+        }
+
+        .testimonials .testimonial-item {
+            padding: 30px;
+            margin: 15px;
+        }
+
+        .testimonials .testimonial-item .testimonial-img {
+            position: static;
+            left: auto;
+        }
+    }
     a {
         color: #4154f1;
         text-decoration: none;
@@ -1289,159 +1435,7 @@
     /*--------------------------------------------------------------
     # Portfolio Details
     --------------------------------------------------------------*/
-    .portfolio-details {
-        padding-top: 40px;
-    }
 
-    .portfolio-details .portfolio-details-slider img {
-        width: 100%;
-    }
-
-    .portfolio-details .portfolio-details-slider .swiper-pagination {
-        margin-top: 20px;
-        position: relative;
-    }
-
-    .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: #fff;
-        opacity: 1;
-        border: 1px solid #4154f1;
-    }
-
-    .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-        background-color: #4154f1;
-    }
-
-    .portfolio-details .portfolio-info {
-        padding: 30px;
-        box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    }
-
-    .portfolio-details .portfolio-info h3 {
-        font-size: 22px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eee;
-    }
-
-    .portfolio-details .portfolio-info ul {
-        list-style: none;
-        padding: 0;
-        font-size: 15px;
-    }
-
-    .portfolio-details .portfolio-info ul li + li {
-        margin-top: 10px;
-    }
-
-    .portfolio-details .portfolio-description {
-        padding-top: 30px;
-    }
-
-    .portfolio-details .portfolio-description h2 {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 20px;
-    }
-
-    .portfolio-details .portfolio-description p {
-        padding: 0;
-    }
-
-    /*--------------------------------------------------------------
-    # Testimonials
-    --------------------------------------------------------------*/
-    .testimonials .testimonial-item {
-        box-sizing: content-box;
-        padding: 30px;
-        margin: 40px 30px;
-        box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
-        background: #fff;
-        min-height: 320px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .testimonials .testimonial-item .stars {
-        margin-bottom: 15px;
-    }
-
-    .testimonials .testimonial-item .stars i {
-        color: #ffc107;
-        margin: 0 1px;
-    }
-
-    .testimonials .testimonial-item .testimonial-img {
-        width: 90px;
-        border-radius: 50%;
-        border: 4px solid #fff;
-        margin: 0 auto;
-    }
-
-    .testimonials .testimonial-item h3 {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 10px 0 5px 0;
-        color: #111;
-    }
-
-    .testimonials .testimonial-item h4 {
-        font-size: 14px;
-        color: #999;
-        margin: 0;
-    }
-
-    .testimonials .testimonial-item p {
-        font-style: italic;
-        margin: 0 auto 15px auto;
-    }
-
-    .testimonials .swiper-pagination {
-        margin-top: 20px;
-        position: relative;
-    }
-
-    .testimonials .swiper-pagination .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: #fff;
-        opacity: 1;
-        border: 1px solid #4154f1;
-    }
-
-    .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-        background-color: #4154f1;
-    }
-
-    .testimonials .swiper-slide {
-        opacity: 0.3;
-    }
-
-    @media (max-width: 1199px) {
-        .testimonials .swiper-slide-active {
-            opacity: 1;
-        }
-
-        .testimonials .swiper-pagination {
-            margin-top: 0;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        .testimonials .swiper-slide-next {
-            opacity: 1;
-            transform: scale(1.12);
-        }
-    }
-
-    /*--------------------------------------------------------------
-    # Team
-    --------------------------------------------------------------*/
     .team {
         background: #fff;
         padding: 60px 0;
@@ -1639,26 +1633,6 @@
     /*--------------------------------------------------------------
     # Clients
     --------------------------------------------------------------*/
-    .clients .clients-slider .swiper-slide img:hover {
-        opacity: 1;
-    }
-
-    .clients .clients-slider .swiper-pagination {
-        margin-top: 20px;
-        position: relative;
-    }
-
-    .clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: #fff;
-        opacity: 1;
-        border: 1px solid #4154f1;
-    }
-
-    .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-        background-color: #4154f1;
-    }
 
     /*--------------------------------------------------------------
     # Recent Blog Posts
@@ -2538,30 +2512,171 @@
     .crud-img-index{
         border-radius: 50%;
     }
+    .pp{
+        width: 50%;
+    }
+    @media (max-width: 500px) {
+        .footer-links{
+            text-align: center;
+        }
+        .footer-info{
+            text-align: center;
+        }
+        .pp{
+            width: 100%;
+            margin-top: 20px;
+        }
+
+    }
+    /*--------------------------------------------------------------
+
+
+    /*--------------------------------------------------------------
+    # Gallery
+    --------------------------------------------------------------*/
 
 
 </style>
 <body>
+<header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
+        <a href="{{route('page')}}" class="logo d-flex align-items-center">
+            <img src="{{asset('img/logo.png')}}" alt="">
+        </a>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="{{route('page')}}#hero">Bosh sahifa</a></li>
+                <li><a class="nav-link scrollto" href="{{route('page')}}#services">Tashkilotlarimiz</a></li>
+                <li><a class="nav-link scrollto" href="{{route('page')}}#team">Bizning jamoa</a></li>
+                <li><a class="nav-link scrollto" href="{{route('page')}}#projects">Loyihalarimiz</a></li>
+                <li><a class="getstarted scrollto" href="{{route('page')}}#contact">Bog'lanish</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header>
 <div class="">
     @yield('content')
 </div>
+<footer id="footer" class="footer">
+
+    <div class="footer-top">
+        <div class="container">
+            @foreach($network as $net)
+                <div class="row gy-2">
+                    <div class="col-lg-6 col-md-12 footer-info">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <img src="{{asset('img/logo.png')}}" alt="">
+                        </a>
+                        <p class=" pp">
+                            {{$net['name_'.__('messages.lang')]}}
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 footer-links">
+
+                        <div class="social-links mt-3 ">
+                            <h4>Ijtimoiy tarmoqlar:</h4>
+                            <div class="mx-5">
+                                <a href="{{$net->telegram}}" class="linkedin"><i class="bi bi-telegram"></i></a>
+                                <a href="{{$net->facebook}}" class="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="{{$net->instagram}}" class="instagram"><i class="bi bi-instagram"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            @endforeach
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>Ilm-u ziyo</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+        </div>
+    </div>
+</footer>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
-
-
-
-    /**
+<script >/**
      * Template Name: FlexStart
      * Updated: Jan 29 2024 with Bootstrap v5.3.2
      * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
      * Author: BootstrapMade.com
      * License: https://bootstrapmade.com/license/
      */
+
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterButtons = document.querySelectorAll('#portfolio-flters li');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('filter-active');
+                });
+                button.classList.add('filter-active');
+            });
+        });
+    });
+
+
+    var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                450: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                }
+
+            },
+
+        });
+
+
     (function () {
         "use strict";
 
+        var swiper = new Swiper(".mySwiper2", {
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+
+        });
 
 
 
@@ -2716,38 +2831,6 @@
         /**
          * Clients Slider
          */
-        new Swiper('.clients-slider', {
-            speed: 400,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            },
-            slidesPerView: 'auto',
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 10
-                },
-                480: {
-                    slidesPerView: 3,
-                    spaceBetween: 15
-                },
-                640: {
-                    slidesPerView: 4,
-                    spaceBetween: 20
-                },
-                992: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
-            }
-        });
 
         /**
          * Porfolio isotope and filter
@@ -2788,46 +2871,10 @@
         /**
          * Portfolio details slider
          */
-        new Swiper('.portfolio-details-slider', {
-            speed: 400,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-            }
-        });
 
         /**
          * Testimonials slider
-         */
-        new Swiper('.testimonials-slider', {
-            speed: 600,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            },
-            slidesPerView: 'auto',
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 40
-                },
 
-                1200: {
-                    slidesPerView: 3,
-                }
-            }
-        });
 
         /**
          * Animation on scroll
@@ -2848,6 +2895,7 @@
         /**
          * Initiate Pure Counter
          */
+
         new PureCounter();
 
     })();

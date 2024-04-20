@@ -2578,6 +2578,9 @@
              <div class="col-md-3 mt-5">
                  <div class=" py-2 text-center shadow bg-dark  ">
                      <div class="my-4 w-100  ">
+                         <a class="active d-flex  text-white" href="{{route('home.index')}}"> <h4 class="mx-2"><i class="bi bi-grid-3x3-gap-fill" ></i> </h4> <h4 class="text-white text-end"> Bosh sahifa</h4></a>
+                     </div>
+                     <div class="my-4 w-100  ">
                          <a class="active d-flex text-white" href="{{route('connection.index')}}"> <h4 class="mx-2"><i class="bi bi-grid-3x3-gap-fill" ></i> </h4> <h4 class="text-white"> Biz bilan bog'laning</h4></a>
                      </div>
                      <div class="my-4 w-100  ">
@@ -2587,7 +2590,13 @@
                          <a class="active d-flex  text-white" href="{{route('project.index')}}"> <h4 class="mx-2"><i class="bi bi-grid-3x3-gap-fill" ></i> </h4> <h4 class="text-white text-end"> Bizning loyihalarimiz</h4></a>
                      </div>
                      <div class="my-4 w-100  ">
-                         <a class="active d-flex  text-white" href="{{route('crud.index')}}"> <h4 class="mx-2"><i class="bi bi-grid-3x3-gap-fill" ></i> </h4> <h4 class="text-white text-end"> Dashboard</h4></a>
+                         <a class="active d-flex  text-white" href="{{route('network.index')}}"> <h4 class="mx-2"><i class="bi bi-grid-3x3-gap-fill" ></i> </h4> <h4 class="text-white text-end"> Ijtimoiy tarmoqlar</h4></a>
+                     </div>
+                     <div class="my-4 w-100  ">
+                         <a class="active d-flex  text-white" href="{{route('shows.index')}}"> <h4 class="mx-2"><i class="bi bi-grid-3x3-gap-fill" ></i> </h4> <h4 class="text-white text-end">  o'quv markazi</h4></a>
+                     </div>
+                     <div class="my-4 w-100  ">
+                         <a class="active d-flex  text-white" href="{{route('auth.index')}}"> <h4 class="mx-2"><i class="bi bi-grid-3x3-gap-fill" ></i> </h4> <h4 class="text-white text-end">  Sozlamalar</h4></a>
                      </div>
 
 

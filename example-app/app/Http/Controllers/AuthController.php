@@ -25,7 +25,7 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)){
             return redirect()->intended(route("crud.index"));
         }
-        return redirect(route("login"))->with("error","Login failed");
+        return redirect(route("auth.index"))->with("error","Login failed");
     }
     public function register()
     {
@@ -58,5 +58,42 @@ class AuthController extends Controller
         $request->session()->regenerateToken();
 
         return redirect(route("login"));
+    }
+
+
+    public function index()
+    {
+        $users = User::all();
+        return view("auth.index",compact("users"));
+    }
+
+
+
+    public function edit($id)
+    {
+        $user = User::findOrFail($id);
+        return view('auth.edit-password', compact('user'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $request->validate([
+            'password' => 'required|min:8',
+        ]);
+
+        $user = User::findOrFail($id);
+        $user->password = Hash::make($request->password);
+        $user->save();
+
+        return redirect()->route('auth.index')->with('success', 'Parol mofaqiyatli o\'zgartirildi');
+    }
+    public function destroy($id)
+    {
+        $user = User::findOrFail($id);
+
+        $user->delete();
+
+        return redirect()->route('auth.index')->with('success', 'mofaqiyatli ochirildi');
+
     }
 }

@@ -13,13 +13,11 @@
             </div>
             <div class="member-info">
                 <a href="#"><h4>{{$show->project_type}}</h4></a>
-                @if(is_array($show->show_image))
-                    @foreach($show->show_image as $img)
-                        <img src="{{ asset($img) }}" alt="Image" width="100">
-                    @endforeach
-                @else
-                    <img src="{{ asset($show->show_image) }}" alt="Image" width="100">
-                @endif
+
+                @foreach($show_images as $image)
+                    <img src="{{ asset($image) }}" alt="Image" width="200">
+                @endforeach
+
 
             </div>
         </div>
