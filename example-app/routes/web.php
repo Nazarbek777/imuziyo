@@ -3,9 +3,9 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProjectController;
-use Illuminate\Support\Facades\App;
+use App\Http\Controllers\ShowController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,39 +17,9 @@ use Illuminate\Http\Request;
 |
 */
 
-
-
-
-//Route::group(['prefix' => '/{lang?}'], function () {
-//
-//
-//
-//
-//
-//});
-
-
-Route::get('/', [MainController::class, 'page'])->name('page');
-Route::get('/sort/all', [ProjectController::class, 'all'])->name('sort.all');
-Route::get('/sort/technical', [ProjectController::class, 'technical'])->name('sort.technical');
-Route::get('/sort/education', [ProjectController::class, 'education'])->name('sort.education');
-Route::get('/sort/school', [ProjectController::class, 'school'])->name('sort.school');
-Route::get('/sort/university', [ProjectController::class, 'university'])->name('sort.university');
-
-Route::get('/main/show{id}', [\App\Http\Controllers\ShowController::class, 'allShow'])->name('main');
-Route::get('/sort/show{id}', [ProjectController::class, 'allShow'])->name('sort.show');
-
-
-
-
-
-
-
-
-
-
-
-
+Route::get("/login", [\App\Http\Controllers\AuthController::class, "login"])->name("login");
+Route::post("/login", [\App\Http\Controllers\AuthController::class, "LoginPost"])->name("login.post");
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::middleware("auth")->group(function () {
     Route::view("/crud", "auth.crud.index")->name("crud");
     Route::controller(\App\Http\Controllers\MainController::class)->group(function () {
@@ -146,7 +116,20 @@ Route::middleware("auth")->group(function () {
 });
 
 
-Route::get("/login", [\App\Http\Controllers\AuthController::class, "login"])->name("login");
-Route::post("/login", [\App\Http\Controllers\AuthController::class, "LoginPost"])->name("login.post");
+Route::group(['prefix' => '{locale?}', 'middleware' => 'setlocale'], function () {
+    Route::get('/', [MainController::class, 'page'])->name('page');
+    Route::get('/sort/all', [ProjectController::class, 'all'])->name('sort.all');
+    Route::get('/sort/technical', [ProjectController::class, 'technical'])->name('sort.technical');
+    Route::get('/sort/education', [ProjectController::class, 'education'])->name('sort.education');
+    Route::get('/sort/school', [ProjectController::class, 'school'])->name('sort.school');
+    Route::get('/sort/university', [ProjectController::class, 'university'])->name('sort.university');
+    Route::get('/main/show/{id}', [ShowController::class, 'allShow'])->name('main');
+    Route::get('/sort/show/{id}', [ProjectController::class, 'allShow'])->name('sort.show');
 
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+});
+
+
+
+
+

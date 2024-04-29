@@ -28,18 +28,20 @@ class ProjectController extends Controller
         return view('sort.layouts.sort-layouts',compact('main','tame','project','connection','network','home','show'));
     }
 
-    public function allShow(Request $request, $id)
+    public function allShow(Request $request , $locale = null, $id = null)
     {
+        $connection = Connection::all();
         $project_type = Project::findOrFail($id);
         $show_images = explode(',', $project_type->show_image);
         $network = Network::all();
         return view('sort.show', [
             'project_type' => $project_type,
             'show_images' => $show_images,
-            'network' => $network
+            'network' => $network,
+            'connection' => $connection,
         ]);
     }
-    public function all(Request $request)
+    public function all(Request $request,$locale = null)
     {
         $main = Main::all();
         $tame = Tame::all();
@@ -181,9 +183,15 @@ class ProjectController extends Controller
         }
 
         Project::create([
-            'name' => $request->input('name'),
-            'description' => $request->input('description'),
-            'content' => $request->input('content'),
+            'name_uz' => $request->input('name_uz'),
+            'name_ru' => $request->input('name_ru'),
+            'name_en' => $request->input('name_en'),
+            'description_uz' => $request->input('description_uz'),
+            'description_ru' => $request->input('description_ru'),
+            'description_en' => $request->input('description_en'),
+            'content_uz' => $request->input('content_uz'),
+            'content_ru' => $request->input('content_ru'),
+            'content_en' => $request->input('content_en'),
             'project_type' => $request->input('project_type'),
             'project_url' => $request->input('project_url'),
             'image' => 'storage/images/' . $imageName,
@@ -193,8 +201,26 @@ class ProjectController extends Controller
         return redirect()->route('project.index')->with('success', 'Muvaffaqiyatli qo`shildi');
     }
 
-    public function edit(string $id)
+    public function edit(Request $request, string $id)
+
     {
+        $image = $request->file('image');
+        if ($image) {
+            $imageName = time() . '.' . $image->getClientOriginalExtension();
+            $imagePath = public_path('storage/images/' . $imageName);
+            Project::make($image->getRealPath())->resize(200, 200)->save($imagePath);
+        }
+
+
+        $showImageNames = [];
+        if ($request->hasFile('show_image')) {
+            $showImages = $request->file('show_image');
+            foreach ($showImages as $showImage) {
+                $showImageName = time() . '_' . $showImage->getClientOriginalName();
+                $showImage->move(public_path('storage/images'), $showImageName);
+                $showImageNames[] = 'storage/images/' . $showImageName;
+            }
+        }
         $tame = Project::findOrFail($id);
         return view('admin.project.edit',compact('tame'));
 

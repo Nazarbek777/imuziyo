@@ -18,7 +18,7 @@
               <thead>
               <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Crm iqtibosi</th>
+                  <th scope="col">UZ Crm iqtibosi</th>
                   <th scope="col">Crm telegram (url)</th>
                   <th scope="col">Crm instagram (url)</th>
                   <th scope="col">Crm facebook (url)</th>

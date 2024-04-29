@@ -26,8 +26,12 @@ class HomeController extends Controller
         $image->move(public_path('storage/images'), $imageName);
 
         Home::create([
-            'name' => $request->input('name'),
-            'content' => $request->input('content'),
+            'name_uz' => $request->input('name_uz'),
+            'name_ru' => $request->input('name_ru'),
+            'name_en' => $request->input('name_en'),
+            'content_uz' => $request->input('content_uz'),
+            'content_ru' => $request->input('content_ru'),
+            'content_en' => $request->input('content_en'),
             'image' => 'storage/images/' . $imageName,
         ]);
 

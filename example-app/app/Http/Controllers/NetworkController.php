@@ -24,6 +24,7 @@ class NetworkController extends Controller
         Network::create([
             'name_uz' => $request->input('name_uz'),
             'name_ru' => $request->input('name_ru'),
+            'name_en' => $request->input('name_en'),
             'telegram' => $request->input('telegram'),
             'instagram' => $request->input('instagram'),
             'facebook' => $request->input('facebook'),

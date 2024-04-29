@@ -11,8 +11,12 @@ class Show extends Model
     protected $table = 'shows';
     protected $fillable = [
         'title',
-        'content',
-        'description',
+        'content_uz',
+        'content_ru',
+        'content_en',
+        'description_uz',
+        'description_ru',
+        'description_en',
         'show_image'
     ];
 }

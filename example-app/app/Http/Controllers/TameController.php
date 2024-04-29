@@ -34,8 +34,12 @@ class TameController extends Controller
         $image->move(public_path('storage/images'), $imageName);
 
         Tame::create([
-            'name' => $request->input('name'),
-            'position' => $request->input('position'),
+            'name_uz' => $request->input('name_uz'),
+            'name_ru' => $request->input('name_ru'),
+            'name_en' => $request->input('name_en'),
+            'position_uz' => $request->input('position_uz'),
+            'position_ru' => $request->input('position_ru'),
+            'position_en' => $request->input('position_en'),
             'twitter' => $request->input('twitter'),
             'instagram' => $request->input('instagram'),
             'facebook' => $request->input('facebook'),
@@ -47,11 +51,16 @@ class TameController extends Controller
 
     }
 
-    public function edit(string $id)
+    public function edit(Request $request, string $id)
     {
+        $image = $request->file('image');
+        if ($image) {
+            $imageName = time() . '.' . $image->getClientOriginalExtension();
+            $imagePath = public_path('storage/images/' . $imageName);
+            Tame::make($image->getRealPath())->resize(200, 200)->save($imagePath);
+        }
         $tame = Tame::findOrFail($id);
-        return view('admin.our-tame.edit',compact('tame'));
-
+        return view('admin.our-tame.edit', compact('tame'));
     }
 
     public function update(Request $request, string $id)

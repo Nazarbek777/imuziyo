@@ -13,17 +13,17 @@ use Illuminate\Support\Facades\App;
 
 class ShowController extends Controller
 {
-    public function allShow( $id)
+    public function allShow($locale = null, $id = null)
     {
-
-
         $network = Network::all();
+        $connection = Connection::all();
         $project_type = Show::findOrFail($id);
         $show_images = explode(',', $project_type->show_image);
         return view('admin.shows.main', [
             'project_type' => $project_type,
             'show_images' => $show_images,
             'network' => $network,
+            'connection' => $connection,
 
         ]);
     }
@@ -55,8 +55,12 @@ class ShowController extends Controller
         }
 
         Show::create([
-            'content' => $request->input('content'),
-            'description' => $request->input('description'),
+            'content_uz' => $request->input('content_uz'),
+            'content_ru' => $request->input('content_ru'),
+            'content_en' => $request->input('content_en'),
+            'description_uz' => $request->input('description_uz'),
+            'description_ru' => $request->input('description_ru'),
+            'description_en' => $request->input('description_en'),
             'title' => $request->input('title'),
             'show_image' => implode(',', $showImageNames),
         ]);

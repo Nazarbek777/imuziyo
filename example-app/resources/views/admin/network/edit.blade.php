@@ -7,7 +7,7 @@
         Network edit
     </h1>
     <hr/>
-    <form action="{{route('network.update',$tame->id)}}" method="POST"  >
+    <form action="{{route('network.update',$tame->id)}}" method="POST" enctype="multipart/form-data"  >
         @csrf
         @method('PUT')
         <div class="row">
@@ -19,6 +19,10 @@
                 <div class="col-md-6">
                     <label for="formFileLg" class="form-label">Crm iqtibosini  kiriting RU</label>
                     <input name="name_ru" class="form-control form-control-lg" id="formFileLg" type="text" value="{{$tame->name_ru}}">
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">Crm iqtibosini  kiriting EN</label>
+                    <input name="name_en" class="form-control form-control-lg" id="formFileLg" type="text" value="{{$tame->name_en}}">
                 </div>
                 <div class="col-md-6">
                     <label for="formFileLg" class="form-label">Crm telegram(url) kiriting</label>

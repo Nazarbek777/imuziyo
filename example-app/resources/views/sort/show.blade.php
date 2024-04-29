@@ -11,10 +11,10 @@
             <div class="container">
 
                 <ol>
-                    <li><a href="{{route('page')}}">Bosh sahifa</a></li>
-                    <li>{{$project_type->content}}</li>
+                    <li><a href="{{route('page')}}">@lang('messages.18')</a></li>
+                    <li>{{$project_type['content_'.__('messages.lang')]}}</li>
                 </ol>
-                <h2>{{$project_type->content}}</h2>
+                <h2>{{$project_type['content_'.__('messages.lang')]}}</h2>
 
             </div>
         </section><!-- End Breadcrumbs -->
@@ -45,9 +45,9 @@
                     <div class="col-lg-8 mx-auto">
 
                         <div class="portfolio-description mt-5 text-center">
-                            <h2>{{$project_type->content}}</h2>
+                            <h2>{{$project_type['content_'.__('messages.lang')]}}</h2>
                             <p class="mt-3">
-                                {{$project_type->description}}
+                                {{$project_type['description_'.__('messages.lang')]}}
                             </p>
                         </div>
                     </div>
@@ -60,5 +60,4 @@
     </main>
     <!-- End #main -->
 
-    <!-- ======= Footer ======= -->
 @endsection

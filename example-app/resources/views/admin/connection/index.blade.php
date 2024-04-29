@@ -17,9 +17,9 @@
               <thead>
               <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Crm nomi</th>
+                  <th scope="col">UZ Crm nomi</th>
                   <th scope="col">Crm tel raqami</th>
-                  <th scope="col">Crm manzili</th>
+                  <th scope="col">UZ Crm manzili</th>
                   <th>
                   </th>
               </tr>
@@ -28,9 +28,9 @@
               @foreach($team as $item)
               <tr>
                   <th scope="row">{{$item->id}}</th>
-                  <td>{{$item->crm_name}}</td>
+                  <td>{{$item->crm_name_uz}}</td>
                   <td>{{$item->crm_number}}</td>
-                  <td>{{$item->crm_location}}</td>
+                  <td>{{$item->crm_location_uz}}</td>
 
                   <td class="text-end w-13 d-flex">
                       <form action="{{route('connection.destroy',$item->id)}}" method="POST" onsubmit="return confirmDelete()">

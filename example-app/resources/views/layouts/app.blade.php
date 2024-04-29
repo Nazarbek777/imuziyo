@@ -15,10 +15,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
-    <title>Document</title>
+    <title>Ilm-u ziyo</title>
 </head>
 <style>
-
 
 
     .swiper {
@@ -63,100 +62,103 @@
     }
 
 
-
     .member {
         flex: 0 0 auto;
         width: 300px; /* Slider elementlari o'lchami */
     }
 
 
-    .slide-content-x{
+    .slide-content-x {
         margin: 0 40px;
     }
 
-    .card-x{
-        width:320px;
-        border-radius:25px;
+    .card-x {
+        width: 320px;
+        border-radius: 25px;
         background-color: #f5f3f3;
     }
-    .image-content-x, .card-content-x{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        padding:10px 14px;
+
+    .image-content-x, .card-content-x {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 14px;
     }
-    .image-content-x{
-        row-gap:5px;
-        position:relative;
+
+    .image-content-x {
+        row-gap: 5px;
+        position: relative;
     }
-    .overlay-x{
-        position:absolute;
-        height:50%;
-        width:100%;
-        background-color:#4070F4;
-        left:0;
-        top:0;
-        border-radius:25px 25px 0 25px;
+
+    .overlay-x {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        background-color: #4070F4;
+        left: 0;
+        top: 0;
+        border-radius: 25px 25px 0 25px;
     }
 
     .overlay-x::before,
-    .overlay-x::after{
-        content:'';
-        position:absolute;
-        right:0;
-        bottom:-40px;
-        height:40px;
-        width:40px;
-        background-color:#4070F4;;
-    }
-    .overlay-x::after{
-        border-radius:  0 25px 0 0 ;
-        background-color:#FFF;
-    }
-    .card-image-x{
-        position:relative;
-        height:150px;
-        width:150px;
-        border-radius:50%;
+    .overlay-x::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+        height: 40px;
+        width: 40px;
+        background-color: #4070F4;;
     }
 
-    .card-image-x .card-img-x{
-        height:100%;
-        width:100%;
-        object-fit:cover;
-        border:4px solid #4070F4;
-        border-radius:50%;
-
-    }
-    .name-x{
-        font-size:18px;
-        font-weight:500;
-        color:#333;
-    }
-    .description-x{
-        font-size:14px;
-        color:#707070;
-        text-align:center;
-    }
-    .button-x{
-        border:none;
-        font-size:16px;
-        color:#FFF;
-        padding:8px 16px;
-        background-color:#4070F4;
-        border-radius:6px;
-        margin:14px;
-        cursor:pointer;
-        transition:all 0.3s ease;
-    }
-    .button:hover{
-        background:#265DF2;
+    .overlay-x::after {
+        border-radius: 0 25px 0 0;
+        background-color: #FFF;
     }
 
+    .card-image-x {
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
 
+    .card-image-x .card-img-x {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border: 4px solid #4070F4;
+        border-radius: 50%;
 
+    }
 
+    .name-x {
+        font-size: 18px;
+        font-weight: 500;
+        color: #333;
+    }
 
+    .description-x {
+        font-size: 14px;
+        color: #707070;
+        text-align: center;
+    }
+
+    .button-x {
+        border: none;
+        font-size: 16px;
+        color: #FFF;
+        padding: 8px 16px;
+        background-color: #4070F4;
+        border-radius: 6px;
+        margin: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .button:hover {
+        background: #265DF2;
+    }
 
 
     @media (max-width: 767px) {
@@ -179,6 +181,7 @@
             left: auto;
         }
     }
+
     a {
         color: #4154f1;
         text-decoration: none;
@@ -2509,25 +2512,61 @@
         font-size: 13px;
         color: #012970;
     }
-    .crud-img-index{
+
+    .crud-img-index {
         border-radius: 50%;
     }
-    .pp{
+
+    .pp {
         width: 50%;
     }
+
     @media (max-width: 500px) {
-        .footer-links{
+        .footer-links {
             text-align: center;
         }
-        .footer-info{
+
+        .footer-info {
             text-align: center;
         }
-        .pp{
+
+        .pp {
             width: 100%;
             margin-top: 20px;
         }
 
     }
+
+    .lang {
+        border: 1px solid blue;
+        /*padding: 5px;*/
+        width: 50px;
+    }
+
+    .uz {
+
+        /*width: 20px;*/
+
+        height: 2px;
+    }
+
+    .ru {
+        /*width: 20px;*/
+        /*margin-left: 4px;*/
+        height: 2px;
+    }
+
+    .uz:active,
+    .uz:focus {
+        text-decoration: underline;
+    }
+
+    .ru:active,
+    .ru:focus {
+        text-decoration: underline;
+    }
+
+
     /*--------------------------------------------------------------
 
 
@@ -2547,13 +2586,30 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link scrollto active" href="{{route('page')}}#hero">Bosh sahifa</a></li>
-                <li><a class="nav-link scrollto" href="{{route('page')}}#services">Tashkilotlarimiz</a></li>
-                <li><a class="nav-link scrollto" href="{{route('page')}}#team">Bizning jamoa</a></li>
-                <li><a class="nav-link scrollto" href="{{route('page')}}#projects">Loyihalarimiz</a></li>
-                <li><a class="getstarted scrollto" href="{{route('page')}}#contact">Bog'lanish</a></li>
+                <li><a class="nav-link scrollto active"
+                       href="{{route('page', ['locale' => app()->getLocale()])}}/#hero">@lang('messages.1')</a></li>
+                <li><a class="nav-link scrollto"
+                       href="{{route('page', ['locale' => app()->getLocale()])}}/#services">@lang('messages.2')</a></li>
+                <li><a class="nav-link scrollto"
+                       href="{{route('page', ['locale' => app()->getLocale()])}}/#team">@lang('messages.3')</a></li>
+                <li><a class="nav-link scrollto"
+                       href="{{route('page', ['locale' => app()->getLocale()])}}/#projects">@lang('messages.4')</a></li>
+                <li><a class="getstarted scrollto"
+                       href="{{route('page', ['locale' => app()->getLocale()])}}/#contact">@lang('messages.5')</a></li>
+                <div class="dropdown mx-1">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                        {{ app()->getLocale() }}
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{ route('page') }}/uz">uz</a></li>
+                        <li><a class="dropdown-item" href="{{ route('page') }}/ru">ru</a></li>
+                        <li><a class="dropdown-item" href="{{ route('page') }}/en">en</a></li>
+                    </ul>
+                </div>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
+            <i class="bi bi-list mobile-nav-toggle">
+            </i>
         </nav><!-- .navbar -->
 
     </div>
@@ -2561,6 +2617,49 @@
 <div class="">
     @yield('content')
 </div>
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+        <header class="section-header">
+            <p>@lang('messages.19')</p>
+        </header>
+
+        <div class="row gy-1">
+            <div class="col-lg-12">
+                <div class="row gy-4">
+                    @foreach($connection as $tk)
+                        <div class="col-md-4">
+                            <div class="info-box">
+                                <!-- <i class="bi bi-building"></i> -->
+                                <h3>{{$tk['crm_name_'.__('messages.lang')]}}</h3>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="bi bi-telephone fs-5">
+                                        </i>
+                                    </div>
+                                    <div class="col-10  ">
+                                        <p>{{$tk->crm_number}}</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <i class="bi bi-geo fs-5">
+                                        </i>
+                                    </div>
+                                    <div class="col-10  ">
+                                        <p>{{$tk['crm_location_'.__('messages.lang')]}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 <footer id="footer" class="footer">
 
     <div class="footer-top">
@@ -2568,7 +2667,7 @@
             @foreach($network as $net)
                 <div class="row gy-2">
                     <div class="col-lg-6 col-md-12 footer-info">
-                        <a href="index.html" class="logo d-flex align-items-center">
+                        <a href="{{'/'}}" class="logo d-flex align-items-center">
                             <img src="{{asset('img/logo.png')}}" alt="">
                         </a>
                         <p class=" pp">
@@ -2579,7 +2678,7 @@
                     <div class="col-lg-6 col-md-12 footer-links">
 
                         <div class="social-links mt-3 ">
-                            <h4>Ijtimoiy tarmoqlar:</h4>
+                            <h4>@lang('messages.20')</h4>
                             <div class="mx-5">
                                 <a href="{{$net->telegram}}" class="linkedin"><i class="bi bi-telegram"></i></a>
                                 <a href="{{$net->facebook}}" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -2606,58 +2705,52 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script >/**
+<script>/**
      * Template Name: FlexStart
      * Updated: Jan 29 2024 with Bootstrap v5.3.2
      * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
      * Author: BootstrapMade.com
      * License: https://bootstrapmade.com/license/
      */
+    document.addEventListener('DOMContentLoaded', function () {
+        var currentUrl = window.location.href;
+        var uzLink = document.getElementById('uzLink');
+        var ruLink = document.getElementById('ruLink');
 
-
-
-    document.addEventListener('DOMContentLoaded', function() {
-        const filterButtons = document.querySelectorAll('#portfolio-flters li');
-
-        filterButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                filterButtons.forEach(btn => {
-                    btn.classList.remove('filter-active');
-                });
-                button.classList.add('filter-active');
-            });
-        });
+        if (currentUrl.includes('/uz')) {
+            uzLink.classList.add('active');
+        } else if (currentUrl.includes('/ru')) {
+            ruLink.classList.add('active');
+        }
     });
-
-
     var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false
+        slidesPerView: 1,
+        spaceBetween: 10,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            450: {
+                slidesPerView: 1,
+                spaceBetween: 20,
             },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
             },
-            breakpoints: {
-                450: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
-                },
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                }
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            }
 
-            },
+        },
 
-        });
+    });
 
 
     (function () {
@@ -2677,7 +2770,6 @@
 
 
         });
-
 
 
         /**
@@ -2876,7 +2968,7 @@
          * Testimonials slider
 
 
-        /**
+         /**
          * Animation on scroll
          */
         function aos_init() {

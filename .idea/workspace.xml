@@ -5,56 +5,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d1b0b47-a15f-446f-8d82-e44364344553" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-author.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-inside-post.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-recent-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-recent-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-recent-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-recent-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/blog-recent-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/comments-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/comments-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/comments-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/comments-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/comments-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/blog/comments-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/clients/client-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/clients/client-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/clients/client-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/clients/client-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/clients/client-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/clients/client-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/clients/client-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/clients/client-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/kiu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/portfolio/portfolio-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/MR.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/bfy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/bfy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/mr.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/team-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/team-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/team-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/team-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/ur.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/team/ur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/testimonials/testimonials-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/testimonials/testimonials-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/testimonials/testimonials-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/testimonials/testimonials-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/public/img/testimonials/testimonials-5.jpg" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-app/app/Http/Middleware/SetLocale.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/ConnectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/ConnectionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/NetworkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/NetworkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/ProjectController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/ShowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/ShowController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/TameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/TameController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Network.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Network.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Project.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Show.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Tame.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Tame.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/lang/en/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/lang/ru/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/lang/ru/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/lang/uz/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/lang/uz/messages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/connection/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/connection/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/connection/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/connection/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/connection/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/connection/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/home/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/home/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/home/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/home/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/home/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/home/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/network/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/network/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/network/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/network/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/network/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/network/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/project/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/project/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/project/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/project/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/project/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/project/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/project/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/project/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/shows/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/shows/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/shows/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/shows/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/shows/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/shows/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/shows/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/shows/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/all.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/education.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/education.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/school.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/school.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/technical.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/technical.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/university.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/university.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +340,9 @@
       <workItem from="1713486649835" duration="347000" />
       <workItem from="1713489710351" duration="4881000" />
       <workItem from="1713531325265" duration="625000" />
-      <workItem from="1713551408043" duration="14668000" />
+      <workItem from="1713551408043" duration="14964000" />
+      <workItem from="1713592898314" duration="41786000" />
+      <workItem from="1713708706467" duration="79000" />
     </task>
     <servers />
   </component>
@@ -357,16 +359,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/example-app/routes/web.php</url>
-          <line>86</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

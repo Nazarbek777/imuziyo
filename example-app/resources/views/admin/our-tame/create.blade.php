@@ -9,13 +9,30 @@
             @csrf
             <div class="row">
                 <div class="col-md-6">
-                    <label for="formFileLg" class="form-label">Jamoa a'zosining ismini kiriting</label>
-                    <input name="name" class="form-control form-control-lg" id="formFileLg" type="text">
+                    <label for="formFileLg" class="form-label">UZ Jamoa a'zosining ismini kiriting</label>
+                    <input name="name_uz" class="form-control form-control-lg" id="formFileLg" type="text">
                 </div>
                 <div class="col-md-6">
-                    <label for="formFileLg" class="form-label">Jamoa a'zosining  lavozimini kiriting</label>
-                    <input name="position" class="form-control form-control-lg" id="formFileLg" type="text">
+                    <label for="formFileLg" class="form-label">RU Jamoa a'zosining ismini kiriting</label>
+                    <input name="name_ru" class="form-control form-control-lg" id="formFileLg" type="text">
                 </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">EN Jamoa a'zosining ismini kiriting</label>
+                    <input name="name_en" class="form-control form-control-lg" id="formFileLg" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">UZ Jamoa a'zosining  lavozimini kiriting</label>
+                        <input name="position_uz" class="form-control form-control-lg" id="formFileLg" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">RU Jamoa a'zosining  lavozimini kiriting</label>
+                    <input name="position_ru" class="form-control form-control-lg" id="formFileLg" type="text">
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">EN Jamoa a'zosining  lavozimini kiriting</label>
+                    <input name="position_en" class="form-control form-control-lg" id="formFileLg" type="text">
+                </div>
+
                 <div class="col-md-6">
                     <label for="formFileLg" class="form-label">Jamoa a'zosining rasmini kiriting</label>
                     <input name="image" class="form-control form-control-lg" id="formFileLg" type="file">

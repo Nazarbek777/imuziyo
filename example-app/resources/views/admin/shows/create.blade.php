@@ -11,16 +11,32 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="formFileLg" class="form-label">Loyihaga tegishli(show) bir nechta rasm kiriting </label>
-                    <input required name="show_image[]" multiple class="form-control form-control-lg" id="formFileLg" type="file">
+                    <input required name="show_image[]" multiple class="form-control form-control-lg" id="" type="file">
                 </div>
 
                 <div class="col-md-6">
-                    <label for="formFileLg" class="form-label">sarlavhani kiriting</label>
-                    <textarea name="content" id=""  class="form-control form-control-lg" ></textarea>
+                    <label for="formFileLg" class="form-label">UZ sarlavhani kiriting</label>
+                    <textarea name="content_uz" id=""  class="form-control form-control-lg" ></textarea>
                 </div>
                 <div class="col-md-6">
-                    <label for="formFileLg" class="form-label"> description qismini kiriting</label>
-                    <textarea name="description" id=""   class="form-control form-control-lg" ></textarea>
+                    <label for="formFileLg" class="form-label"> RU sarlavhani kiriting</label>
+                    <textarea name="content_ru" id=""  class="form-control form-control-lg" ></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label"> EN sarlavhani kiriting</label>
+                    <textarea name="content_en" id=""  class="form-control form-control-lg" ></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">UZ description qismini kiriting</label>
+                    <textarea name="description_uz" id=""   class="form-control form-control-lg" ></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">RU description qismini kiriting</label>
+                    <textarea name="description_ru" id=""   class="form-control form-control-lg" ></textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">EN description qismini kiriting</label>
+                    <textarea name="description_en" id=""   class="form-control form-control-lg" ></textarea>
                 </div>
 
             </div>

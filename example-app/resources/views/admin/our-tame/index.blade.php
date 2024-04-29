@@ -17,8 +17,8 @@
               <thead>
               <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Ismi</th>
-                  <th scope="col">Lavozimi</th>
+                  <th scope="col">UZ Ismi</th>
+                  <th scope="col">UZ Lavozimi</th>
                   <th scope="col">rasmi</th>
                   <th scope="col">facebook(url)</th>
                   <th>
@@ -29,8 +29,8 @@
               @foreach($team as $item)
               <tr>
                   <th scope="row">{{$item->id}}</th>
-                  <td>{{$item->name}}</td>
-                  <td>{{$item->position}}</td>
+                  <td>{{$item->name_uz}}</td>
+                  <td>{{$item->position_uz}}</td>
                   <td>{{$item->image}}</td>
                   <td>{{$item->facebook}}</td>
 

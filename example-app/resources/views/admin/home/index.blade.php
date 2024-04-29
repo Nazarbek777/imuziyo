@@ -3,7 +3,9 @@
 @section('title','Our time')
 
 @section('content')
+
   <div class="mt-5">
+      <h2>Bunga bittadan ortiq  ma'lumot kiritilmaydi!</h2>
       @if(session()->has("success"))
           <div class="alert alert-success">
               {{session()->get("success")}}
@@ -17,8 +19,8 @@
               <thead>
               <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Sarlavha</th>
-                  <th scope="col">Short_content</th>
+                  <th scope="col">Sarlavha UZ</th>
+                  <th scope="col">Short_content UZ</th>
                    <th scope="col">image</th>
                   <th></th>
               </tr>
@@ -27,8 +29,8 @@
               @foreach($team as $item)
               <tr>
                   <th scope="row">{{$item->id}}</th>
-                  <td>{{$item->name}}</td>
-                  <td>{{$item->content}}</td>
+                  <td>{{$item->name_uz}}</td>
+                  <td>{{$item->content_uz}}</td>
                   <td>{{$item->image}}</td>
 
                   <td class="text-end w-13 d-flex">

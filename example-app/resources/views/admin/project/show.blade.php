@@ -8,7 +8,8 @@
             <div class="member-img">
                 <img src="{{asset($show->image)}}" class="img-fluid" alt="" style="height: 100%;">
                 <div class="social">
-                    <a href="{{$show->project_url}}"><i class="bi bi-telegram"></i></a>
+                    <a href="{{$show->name_uz}}"><i class="bi bi-telegram"></i></a>
+                    <a href="{{$show->name_ru}}"><i class="bi bi-telegram"></i></a>
                 </div>
             </div>
             <div class="member-info">

@@ -26,7 +26,7 @@
               @foreach($project as $item)
               <tr>
                   <th scope="row">{{$item->id}}</th>
-                  <td>{{$item->content}}</td>
+                  <td>{{$item->content_uz}}</td>
 
                   <td class="text-end  d-flex">
                       <form action="{{route('shows.destroy',$item->id)}}" method="POST" >

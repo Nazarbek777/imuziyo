@@ -12,8 +12,12 @@ class Connection extends Model
 
     protected $table = 'connections';
      protected  $fillable = [
-         'crm_name',
+         'crm_name_uz',
+         'crm_name_ru',
+         'crm_name_en',
          'crm_number',
-         'crm_location'
+         'crm_location_uz',
+         'crm_location_ru',
+         'crm_location_en',
      ];
 }

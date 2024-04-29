@@ -12,6 +12,7 @@ class Network extends Model
     protected $fillable = [
         'name_uz',
         'name_ru',
+        'name_en',
         'telegram',
         'instagram',
         'facebook'

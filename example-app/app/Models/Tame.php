@@ -11,8 +11,12 @@ class Tame extends Model
 
     protected $table = 'tames';
     protected $fillable = [
-        'name',
-        'position',
+        'name_uz',
+        'name_ru',
+        'name_en',
+        'position_uz',
+        'position_ru',
+        'position_en',
         'image',
         'twitter',
         'instagram',

@@ -9,16 +9,38 @@
             @csrf
             <div class="row">
                 <div class="col-md-6">
-                    <label for="formFileLg" class="form-label">Asosiy sahifaning sarlavhasini kiritin</label>
-                    <input name="name" class="form-control form-control-lg" id="formFileLg" type="text">
+                    <label for="formFileLg" class="form-label">UZ Asosiy sahifaning sarlavhasini kiritin</label>
+                    <textarea name="name_uz" class="form-control form-control-lg" id="formFileLg" type="text">
+                    </textarea>
                 </div>
                 <div class="col-md-6">
-                    <label for="formFileLg" class="form-label"> Asosiy sahifanining short_content ni kiriting</label>
-                    <input name="content" class="form-control form-control-lg" id="formFileLg" type="text">
+                    <label for="formFileLg" class="form-label">RU Asosiy sahifaning sarlavhasini kiritin</label>
+                    <textarea name="name_ru" class="form-control form-control-lg" id="formFileLg" type="text">
+                    </textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">EN Asosiy sahifaning sarlavhasini kiritin</label>
+                    <textarea name="name_en" class="form-control form-control-lg" id="formFileLg" type="text">
+                    </textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">UZ Asosiy sahifanining short_content ni kiriting</label>
+                    <textarea name="content_uz" class="form-control form-control-lg" id="formFileLg" type="text">
+                    </textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">RU Asosiy sahifanining short_content ni kiriting</label>
+                    <textarea name="content_ru" class="form-control form-control-lg" id="formFileLg" type="text">
+                    </textarea>
+                </div>
+                <div class="col-md-6">
+                    <label for="formFileLg" class="form-label">EN Asosiy sahifanining short_content ni kiriting</label>
+                    <textarea name="content_en" class="form-control form-control-lg" id="formFileLg" type="text">
+                    </textarea>
                 </div>
                 <div class="col-md-6">
                     <label for="formFileLg" class="form-label">Jamoa a'zosining rasmini kiriting</label>
-                    <input name="image" class="form-control form-control-lg" id="formFileLg" type="file">
+                    <input required name="image" class="form-control form-control-lg" id="formFileLg" type="file">
                 </div>
 
             </div>

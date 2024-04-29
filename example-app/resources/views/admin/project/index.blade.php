@@ -18,9 +18,9 @@
               <thead>
               <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Loyihalar nomi</th>
+                  <th scope="col">Name(select)</th>
+                  <th scope="col">UZ Loyihalar nomi</th>
                   <th scope="col">Loyiha uchun(tashqi) rasm</th>
-                  <th scope="col">Loyiha(url)</th>
                   <th>
                   </th>
               </tr>
@@ -29,9 +29,9 @@
               @foreach($project as $item)
               <tr>
                   <th scope="row">{{$item->id}}</th>
-                  <td>{{$item->project_type}}</td>
+                  <th scope="row">{{$item->project_type}}</th>
+                  <td>{{$item->name_uz}}</td>
                   <td>{{$item->image}}</td>
-                  <td>{{$item->project_url}}</td>
 
                   <td class="text-end w-13 d-flex">
                       <form action="{{route('project.destroy',$item->id)}}" method="POST" onsubmit="return confirmDelete()">

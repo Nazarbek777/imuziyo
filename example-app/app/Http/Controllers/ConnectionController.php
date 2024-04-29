@@ -21,9 +21,13 @@ class ConnectionController extends Controller
     {
 
         Connection::create([
-            'crm_name' => $request->input('crm_name'),
+            'crm_name_uz' => $request->input('crm_name_uz'),
+            'crm_name_ru' => $request->input('crm_name_ru'),
+            'crm_name_en' => $request->input('crm_name_en'),
             'crm_number' => $request->input('crm_number'),
-            'crm_location' => $request->input('crm_location'),
+            'crm_location_uz' => $request->input('crm_location_uz'),
+            'crm_location_ru' => $request->input('crm_location_ru'),
+            'crm_location_en' => $request->input('crm_location_en'),
 
         ]);
 

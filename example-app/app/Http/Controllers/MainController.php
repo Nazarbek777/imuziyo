@@ -18,10 +18,9 @@ class MainController extends Controller
 
 
 
-    public function page(Request $request)
+
+    public function page()
     {
-
-
         $main = Main::all();
         $tame = Tame::all();
         $connection = Connection::all();
@@ -29,7 +28,6 @@ class MainController extends Controller
         $network = Network::all();
         $show = Show::all();
         $home = Home::all();
-
 
         return view('index',compact('main','tame','project','connection','network','show','home'));
     }
