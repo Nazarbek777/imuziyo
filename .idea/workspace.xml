@@ -5,56 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d1b0b47-a15f-446f-8d82-e44364344553" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/example-app/app/Http/Middleware/SetLocale.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/ConnectionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/ConnectionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/NetworkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/NetworkController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/ProjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/ProjectController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/ShowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/ShowController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Controllers/TameController.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Controllers/TameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Http/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Connection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Home.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Network.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Network.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Project.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Project.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Show.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/app/Models/Tame.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/app/Models/Tame.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/lang/en/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/lang/en/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/lang/ru/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/lang/ru/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/lang/uz/messages.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/lang/uz/messages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/connection/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/connection/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/connection/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/connection/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/connection/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/connection/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/home/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/home/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/home/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/home/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/home/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/home/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/home/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/network/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/network/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/network/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/network/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/network/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/network/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/our-tame/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/project/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/project/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/project/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/project/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/project/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/project/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/project/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/project/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/shows/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/shows/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/shows/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/shows/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/shows/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/shows/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/admin/shows/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/admin/shows/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/all.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/education.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/education.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/school.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/school.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/technical.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/technical.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/resources/views/sort/university.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/sort/university.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-app/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,6 +294,8 @@
       <workItem from="1713551408043" duration="14964000" />
       <workItem from="1713592898314" duration="41786000" />
       <workItem from="1713708706467" duration="79000" />
+      <workItem from="1714211080512" duration="2741000" />
+      <workItem from="1714650370827" duration="1517000" />
     </task>
     <servers />
   </component>
