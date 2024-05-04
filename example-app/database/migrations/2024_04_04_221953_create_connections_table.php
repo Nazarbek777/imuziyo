@@ -13,9 +13,13 @@ return new class extends Migration
     {
         Schema::create('connections', function (Blueprint $table) {
             $table->id();
-            $table->string('crm_name');
+            $table->string('crm_name_uz');
+            $table->string('crm_name_ru')->nullable();
+            $table->string('crm_name_en')->nullable();
             $table->string('crm_number');
-            $table->string('crm_location');
+            $table->string('crm_location_uz')->nullable();
+            $table->string('crm_location_ru')->nullable();
+            $table->string('crm_location_en')->nullable();
             $table->timestamps();
         });
     }

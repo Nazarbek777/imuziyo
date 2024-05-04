@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('networks', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name_uz');
+            $table->string('name_ru')->nullable();
+            $table->string('name_en')->nullable();
             $table->string('telegram');
             $table->string('instagram');
             $table->string('facebook');

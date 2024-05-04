@@ -2596,18 +2596,18 @@
                        href="{{route('page', ['locale' => app()->getLocale()])}}/#projects">@lang('messages.4')</a></li>
                 <li><a class="getstarted scrollto"
                        href="{{route('page', ['locale' => app()->getLocale()])}}/#contact">@lang('messages.5')</a></li>
-                <div class="dropdown mx-1">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                        {{ app()->getLocale() }}
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ route('page') }}/uz">uz</a></li>
-                        <li><a class="dropdown-item" href="{{ route('page') }}/ru">ru</a></li>
-                        <li><a class="dropdown-item" href="{{ route('page') }}/en">en</a></li>
-                    </ul>
-                </div>
             </ul>
+            <div class="dropdown mx-1">
+                <div class="btn btn-primary dropdown-toggle  mx-2"  data-bs-toggle="dropdown"
+                     aria-expanded="">
+                    {{ app()->getLocale() }}
+                </div>
+                <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="{{ route('page') }}/uz">uz</a></li>
+                    <li><a class="dropdown-item" href="{{ route('page') }}/ru">ru</a></li>
+                    <li><a class="dropdown-item" href="{{ route('page') }}/en">en</a></li>
+                </ul>
+            </div>
             <i class="bi bi-list mobile-nav-toggle">
             </i>
         </nav><!-- .navbar -->

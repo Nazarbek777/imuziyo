@@ -13,8 +13,12 @@ return new class extends Migration
     {
         Schema::create('homes', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('content');
+            $table->string('name_uz');
+            $table->string('name_ru');
+            $table->string('name_en');
+            $table->string('content_uz');
+            $table->string('content_ru');
+            $table->string('content_en');
             $table->string('image');
             $table->timestamps();
         });

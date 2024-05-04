@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="2d1b0b47-a15f-446f-8d82-e44364344553" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2024_04_03_210212_create_tames_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/database/migrations/2024_04_03_210212_create_tames_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2024_04_04_221953_create_connections_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/database/migrations/2024_04_04_221953_create_connections_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2024_04_06_200748_create_projects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/database/migrations/2024_04_06_200748_create_projects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2024_04_17_174845_create_networks_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/database/migrations/2024_04_17_174845_create_networks_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2024_04_18_133508_create_shows_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/database/migrations/2024_04_18_133508_create_shows_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/database/migrations/2024_04_18_153512_create_homes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/database/migrations/2024_04_18_153512_create_homes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-app/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/example-app/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +163,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/OSPanel/domains/ilm_u_ziyo/example-app/resources/views/admin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OSPanel/domains&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -295,7 +302,8 @@
       <workItem from="1713592898314" duration="41786000" />
       <workItem from="1713708706467" duration="79000" />
       <workItem from="1714211080512" duration="2741000" />
-      <workItem from="1714650370827" duration="1517000" />
+      <workItem from="1714650370827" duration="4463000" />
+      <workItem from="1714801708387" duration="1565000" />
     </task>
     <servers />
   </component>

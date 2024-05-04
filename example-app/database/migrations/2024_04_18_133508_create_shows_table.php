@@ -14,8 +14,12 @@ return new class extends Migration
         Schema::create('shows', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
-            $table->string('content')->nullable();
-            $table->string('description')->nullable();
+            $table->string('content_uz')->nullable();
+            $table->string('content_ru')->nullable();
+            $table->string('content_en')->nullable();
+            $table->string('description_uz')->nullable();
+            $table->string('description_ru')->nullable();
+            $table->string('description_en')->nullable();
             $table->text('show_image');
             $table->timestamps();
         });

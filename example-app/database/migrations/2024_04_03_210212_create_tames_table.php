@@ -13,8 +13,12 @@ return new class extends Migration
     {
         Schema::create('tames', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('position');
+            $table->string('name_uz')->nullable();
+            $table->string('name_ru')->nullable();
+            $table->string('name_en')->nullable();
+            $table->string('position_uz')->nullable();
+            $table->string('position_ru')->nullable();
+            $table->string('position_en')->nullable();
             $table->string('image');
             $table->string('twitter');
             $table->string('instagram');
