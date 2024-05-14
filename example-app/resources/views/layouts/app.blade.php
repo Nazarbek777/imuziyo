@@ -2603,9 +2603,9 @@
                     {{ app()->getLocale() }}
                 </div>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{{ route('page') }}/uz">uz</a></li>
-                    <li><a class="dropdown-item" href="{{ route('page') }}/ru">ru</a></li>
-                    <li><a class="dropdown-item" href="{{ route('page') }}/en">en</a></li>
+                    <li><a class="dropdown-item" href="{{ route('page') }}/uz">Uzbek</a></li>
+                    <li><a class="dropdown-item" href="{{ route('page') }}/ru">Русский</a></li>
+                    <li><a class="dropdown-item" href="{{ route('page') }}/en">English</a></li>
                 </ul>
             </div>
             <ul>
