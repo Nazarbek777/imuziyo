@@ -13,8 +13,6 @@
         <div class="container">
 
          @foreach($home as $ts)
-             <h1>Ismoil</h1>
-
                 <div class="row">
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
                         <h1 data-aos="fade-up">{{$ts['name_'.__('messages.lang')]}}</h1>
