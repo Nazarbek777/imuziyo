@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="google-site-verification" content="zhYxBFzYhermqhpqfsbSwaRHyU2WPQLcO8hni4bak-k" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"
@@ -18,7 +19,18 @@
     <title>Ilm-u ziyo</title>
 </head>
 <style>
+    .drp {
+        width: 100px;
+        margin-left: -25px;
+    }
 
+    .btn5 {
+        padding: 2@lang();
+        border-radius: 5px;
+        border: 1px solid #4070F4;
+        background-color: #4070F4;
+        color: white;
+    }
 
     .swiper {
         width: 100%;
@@ -2585,7 +2597,19 @@
         </a>
 
         <nav id="navbar" class="navbar">
+            <div class="dropdown mx-1">
+                <div class="btn btn-primary dropdown-toggle  mx-2" data-bs-toggle="dropdown"
+                     aria-expanded="">
+                    {{ app()->getLocale() }}
+                </div>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{{ route('page') }}/uz">uz</a></li>
+                    <li><a class="dropdown-item" href="{{ route('page') }}/ru">ru</a></li>
+                    <li><a class="dropdown-item" href="{{ route('page') }}/en">en</a></li>
+                </ul>
+            </div>
             <ul>
+
                 <li><a class="nav-link scrollto active"
                        href="{{route('page', ['locale' => app()->getLocale()])}}/#hero">@lang('messages.1')</a></li>
                 <li><a class="nav-link scrollto"
@@ -2597,20 +2621,11 @@
                 <li><a class="getstarted scrollto"
                        href="{{route('page', ['locale' => app()->getLocale()])}}/#contact">@lang('messages.5')</a></li>
             </ul>
-            <div class="dropdown mx-1">
-                <div class="btn btn-primary dropdown-toggle  mx-2"  data-bs-toggle="dropdown"
-                     aria-expanded="">
-                    {{ app()->getLocale() }}
-                </div>
-                <ul class="dropdown-menu ">
-                    <li><a class="dropdown-item" href="{{ route('page') }}/uz">uz</a></li>
-                    <li><a class="dropdown-item" href="{{ route('page') }}/ru">ru</a></li>
-                    <li><a class="dropdown-item" href="{{ route('page') }}/en">en</a></li>
-                </ul>
-            </div>
+
             <i class="bi bi-list mobile-nav-toggle">
             </i>
         </nav><!-- .navbar -->
+
 
     </div>
 </header>
